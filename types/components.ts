@@ -13,3 +13,5 @@ export type iconName =
   | 'thumbsUp'
   | 'upload'
   | 'user'
+
+export type indicatorName = 'success' | 'warning' | 'error'
