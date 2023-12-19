@@ -1,4 +1,4 @@
-import { iconName } from 'types/icon'
+import { iconName } from 'types/components'
 
 interface IconProps {
   size?: number
