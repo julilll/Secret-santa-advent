@@ -4,7 +4,12 @@ import { Label, PasswordField, TextField } from '@redwoodjs/forms'
 
 import Icon from '../Icon/Icon'
 
-const ShowHidePassword = ({ label, name, ...rest }) => {
+interface ShowHidePasswordProps {
+  label: string
+  name: string
+}
+
+const ShowHidePassword = ({ label, name, ...rest }: ShowHidePasswordProps) => {
   const [isPasswordShowing, setisPasswordShowing] = useState(false)
 
   const handleClick = () => {
