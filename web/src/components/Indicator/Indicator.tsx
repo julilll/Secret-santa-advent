@@ -16,15 +16,15 @@ const indicatorStyles: Record<
   indicatorName,
   { bgColor: string; iconColor: string }
 > = {
-  success: { bgColor: 'spanishGreen', iconColor: 'white' },
-  warning: { bgColor: 'supernova', iconColor: 'black' },
-  error: { bgColor: 'orangeRed', iconColor: 'white' },
+  success: { bgColor: 'bg-spanishGreen', iconColor: 'white' },
+  warning: { bgColor: 'bg-supernova', iconColor: 'black' },
+  error: { bgColor: 'bg-orangeRed', iconColor: 'white' },
 }
 
 const Indicator = ({ status }: indicatorProps) => {
   const { bgColor, iconColor } = indicatorStyles[status]
   return (
-    <div className={`indicator bg-${bgColor} text-${iconColor}`}>
+    <div className={`indicator ${bgColor} text-${iconColor}`}>
       <Icon id={indicatorIcons[status]} size={16} />
     </div>
   )
