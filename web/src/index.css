@@ -71,6 +71,15 @@
 }
 
 @layer components {
+  .with-rulers {
+    @apply flex items-center gap-7 justify-center
+  }
+
+  .with-rulers:before,
+  .with-rulers:after {
+    @apply content-[''] w-[72px] h-[6px] bg-current block
+  }
+
   .field {
     @apply mb-4
   }
