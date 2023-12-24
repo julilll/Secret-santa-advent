@@ -68,9 +68,31 @@
   input[type="checkbox"]:checked + label:before {
     @apply content-[''] w-10 h-10 block bg-checked
   }
+
+  button[type="submit"],
+  input[type="submit"] {
+    @apply bg-supernova font-handwriting uppercase text-3xl text-black w-full rounded-full py-5
+  }
 }
 
 @layer components {
+  .bg-auth {
+    @apply min-h-screen w-full pb-10 bg-silverTree dark:bg-nileBlue bg-[center_top] bg-no-repeat bg-[length:1440px_auto] min-[1440px]:bg-[length:100%_auto];
+  }
+
+  .page-title {
+    @apply font-condensed m-0 p-0 text-center text-[116px] leading-[0.8] text-white
+  }
+
+  .with-rulers {
+    @apply flex items-center gap-7 justify-center
+  }
+
+  .with-rulers:before,
+  .with-rulers:after {
+    @apply content-[''] w-[72px] h-[6px] bg-current block
+  }
+
   .field {
     @apply mb-4
   }
@@ -80,8 +102,7 @@
   }
 
   .dropdown:before {
-    content: '';
-    @apply border-[12px] border-transparent border-b-white absolute -top-6 left-8
+    @apply content-[''] border-[12px] border-transparent border-b-white absolute -top-6 left-8
   }
 
   .dropdown li {
