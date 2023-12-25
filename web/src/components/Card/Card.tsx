@@ -1,11 +1,11 @@
 import Avatar, { avatarProps } from '../Avatar/Avatar'
 import Icon from '../Icon/Icon'
 
-interface cardProps {
+export interface cardProps {
   avatar: avatarProps
   name: string
   email?: string
-  closable: boolean
+  closable?: boolean
 }
 
 const Card = ({ avatar, name, email, closable = true }: cardProps) => {

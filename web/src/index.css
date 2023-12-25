@@ -23,6 +23,7 @@
     @apply fill-current
   }
 
+  .label,
   label {
     @apply font-handwriting uppercase text-xl tracking-tighter
   }
@@ -76,6 +77,18 @@
 }
 
 @layer components {
+  .status-success {
+    @apply bg-spanishGreen text-white
+  }
+
+  .status-warning {
+    @apply bg-supernova text-black
+  }
+
+  .status-error {
+    @apply bg-orangeRed text-white rotate-45
+  }
+
   .bg-auth {
     @apply min-h-screen w-full pb-10 bg-silverTree dark:bg-nileBlue bg-[center_top] bg-no-repeat bg-[length:1440px_auto] min-[1440px]:bg-[length:100%_auto];
   }
