@@ -3,7 +3,7 @@ import { iconName, indicatorName } from 'types/components'
 import Icon from '../Icon/Icon'
 import Indicator from '../Indicator/Indicator'
 
-interface avatarProps {
+export interface avatarProps {
   avatar?: string
   alt?: string
   letter?: string
