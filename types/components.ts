@@ -17,3 +17,5 @@ export type iconName =
 export type indicatorName = 'success' | 'warning' | 'error'
 
 export type rsvpStatus = 'accept' | 'decline'
+
+export type Statement = 'success' | 'warning' | 'error'

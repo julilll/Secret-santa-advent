@@ -1,7 +1,9 @@
+import { Statement } from 'types/components'
+
 import Icon from '../Icon/Icon'
 
 interface RoundButtonProps {
-  status: 'success' | 'warning' | 'error'
+  status: Statement
 }
 
 const RoundButton = ({ status }: RoundButtonProps) => {
@@ -10,7 +12,7 @@ const RoundButton = ({ status }: RoundButtonProps) => {
     <button
       className={`center h-16 w-16 rounded-full border-2 border-white status-${status}`}
     >
-      <Icon id="plus" />
+      <Icon id={status === 'error' ? 'close' : 'plus'} />
     </button>
   )
 }
