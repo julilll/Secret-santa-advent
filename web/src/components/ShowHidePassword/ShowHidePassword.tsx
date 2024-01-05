@@ -17,7 +17,7 @@ const ShowHidePassword = ({ label, name, ...rest }: ShowHidePasswordProps) => {
   }
 
   return (
-    <div className="field relative">
+    <div className="relative">
       <Label name={name}>{label}</Label>
       {isPasswordShowing ? (
         <TextField name={name} placeholder="" {...rest} />
