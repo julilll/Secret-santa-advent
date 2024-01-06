@@ -1,16 +1,10 @@
 import { useRef } from 'react'
 import { useEffect } from 'react'
 
-import {
-  Form,
-  Label,
-  EmailField,
-  PasswordField,
-  FieldError,
-} from '@redwoodjs/forms'
+import { Form, Label, EmailField, FieldError } from '@redwoodjs/forms'
 import { Link, navigate, routes } from '@redwoodjs/router'
 import { Metadata } from '@redwoodjs/web'
-import { toast, Toaster } from '@redwoodjs/web/toast'
+import { toast } from '@redwoodjs/web/toast'
 
 import { useAuth } from 'src/auth'
 import HeaderWithRulers from 'src/components/HeaderWithRulers/HeaderWithRulers'
@@ -48,7 +42,6 @@ const LoginPage = () => {
   return (
     <>
       <Metadata title="Login" description="Login page" />
-      <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
       <HeaderWithRulers className="mb-6 text-white" heading="Login" />
       <Form onSubmit={onSubmit} className="auth-form">
         <div className="field relative">
