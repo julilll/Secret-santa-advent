@@ -42,6 +42,7 @@
   input[type="url"],
   input[type="number"],
   input[type="tel"],
+  input[type="date"],
   input[type="email"] {
     @apply font-sans text-2xl h-[100px] w-full px-7 border-black border-2
   }
@@ -59,7 +60,7 @@
   }
 
   input[type="checkbox"] + label {
-    @apply flex items-center gap-4 cursor-pointer
+    @apply flex items-center gap-4 cursor-pointer text-3xl dark:text-white
   }
 
   input[type="checkbox"] + label:before {
@@ -107,7 +108,7 @@
   }
 
   .field {
-    @apply mb-4
+    @apply mb-4 relative
   }
 
   .auth-links {
