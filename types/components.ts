@@ -3,6 +3,7 @@ export type iconName =
   | 'check'
   | 'chevron'
   | 'close'
+  | 'edit'
   | 'eyeClosed'
   | 'eyeOpened'
   | 'logout'
