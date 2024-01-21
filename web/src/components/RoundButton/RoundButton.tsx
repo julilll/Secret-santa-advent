@@ -3,14 +3,21 @@ import { Statement } from 'types/components'
 import Icon from '../Icon/Icon'
 
 interface RoundButtonProps {
+  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
   status: Statement
+  type: 'button' | 'submit' | 'reset'
 }
 
-const RoundButton = ({ status }: RoundButtonProps) => {
-  console.log(status)
+const RoundButton = ({
+  handleClick = () => {},
+  status,
+  type,
+}: RoundButtonProps) => {
   return (
     <button
-      className={`center h-16 w-16 rounded-full border-2 border-white status-${status}`}
+      type={type}
+      onClick={handleClick}
+      className={`round-button center h-16 w-16 rounded-full border-2 border-white status-${status}`}
     >
       <Icon id={status === 'error' ? 'close' : 'plus'} />
     </button>
