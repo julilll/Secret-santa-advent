@@ -1,3 +1,5 @@
+import { Toaster } from '@redwoodjs/web/dist/toast'
+
 import Footer from 'src/components/Footer/Footer'
 import MyAccount from 'src/components/MyAccount/MyAccount'
 import Nav from 'src/components/Nav/Nav'
@@ -9,7 +11,8 @@ type InteriorLayoutProps = {
 const InteriorLayout = ({ children }: InteriorLayoutProps) => {
   return (
     <>
-      <main className="grid min-h-screen grid-cols-12 gap-x-5 bg-silverTree dark:bg-nileBlue">
+      <Toaster />
+      <main className="grid min-h-screen grid-cols-12 gap-x-5 bg-silverTree pb-20 dark:bg-nileBlue">
         <aside className="col-span-4 pb-10">
           <div className="fixed z-50">
             <Nav />
