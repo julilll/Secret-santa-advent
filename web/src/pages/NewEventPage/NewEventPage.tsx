@@ -36,7 +36,6 @@ const NewEventPage = () => {
   })
 
   const handleSubmit = (data) => {
-    console.log({ data })
     createEvent({
       variables: {
         name: data.eventName,
